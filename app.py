@@ -18,6 +18,8 @@ classifier = pickle.load(open(filename, 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 #model1 = pickle.load(open('model1.pkl', 'rb'))
 
+print("hello")
+
 db = SQLAlchemy()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
